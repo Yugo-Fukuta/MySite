@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #EC715F;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 70px;
+  float: left;
+}
+
+.nav-list {
+  float: right;
+}
+
+.nav-list-item {
+  list-style: none;
+  font-size: 16px;
+  color: #FAFAFA;
+  float: left;
+  line-height: 70px;
+  padding: 0 30px;
+}
+
+/*main-visual*/
+
+#mv {
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.mv-title{
+  font-size: 64px;
+  color: #FAFAFA;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.mv-subtitle {
+  font-size: 20px;
+  color: #FAFAFA;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*portfolio*/
+
+#portfolio {
+  background-color: #ECEFF1;
+}
+
+#portfolio .container {
+  padding: 90px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 32px;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #EC715F;
+}
+
+.heading-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  padding: 30px 0;
+}
+
+.img-box {
+  width: 920px;
+  height: 510px;
+  margin: 0 auto;
+}
+
+.img-box-item {
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.img-box-item:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+}
+
+.img-box-item:nth-child(2) {
+  background-image: url(img/websuku.png);
+}
+
+.img-box-item:nth-child(3) {
+  background-image: url(img/write.jpg);
+}
+
+.img-box-item:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+
+.img-box-item:nth-child(5) {
+  background-image: url(img/talk.jpg);
+}
+
+.img-box-item:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+}
+
+.img-box-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.img-box-item:last-child(-n+3){
+  margin-bottom: 0;
+}
+
+/*feature*/
+
+#feature .heading{
+  padding-top: 90px;
+}
+
+.feature-box {
+  width: 980px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.feature-box i {
+  font-size: 64px;
+}
+
+.feature-box-item {
+  width: 320px;
+  float: left;
+  margin-right: 10px;
+}
+
+.feature-box-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.feature-heading {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: #000000;
+}
+
+/*profile*/
+
+#profile {
+  background-color: #ECEFF1;
+}
+
+#profile .container {
+  padding: 90px 0;
+}
+
+#profile h3 {
+  font-size: 20px;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+#profile p {
+  font-size: 16px;
+  color: #000000;
+}
+
+#profile .left-content {
+  width: 512px;
+  float: left;
+}
+
+.myicon {
+  background-image: url(img/my-icon.jpg);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#profile .right-content {
+  padding-top: 30px;
+  width: 512px:
+  float: left;
+}
+
+.myname-text {
+  padding-bottom: 20px;
+}
+
+/*contact*/
+
+#contact .heading {
+  padding-top: 90px;
+}
+
+#contact .container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#contact h3 {
+  padding-bottom: 5px;
+}
+
+#contact .left-content-box {
+  width: 400px;
+  float: left;
+}
+
+#contact .right-content-box {
+  width: 400px;
+  float: left;
+}
+
+.left-contact-content {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.left-contact-content h3:nth-last-child(2) {
+  padding-top: 20px;
+}
+
+.right-contact-content {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#contact a {
+  margin: 0 auto;
+}
+
+.link-text {
+  text-decoration: underline;
+}
+
+#contact i {
+  font-size: 50px;
+  padding-right: 20px;
+  float: left;
+}
+
+#contact i:nth-last-child(1) {
+  padding-right: 0;
+}
+
+#contact .clearfix {
+  padding-bottom: 90px;
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  color: #FAFAFA;
+  line-height: 60px;
+}
