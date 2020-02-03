@@ -1,3 +1,5 @@
+/*-- Setting --*/
+
 * {
   margin: 0;
   padding: 0;
@@ -15,212 +17,199 @@ a {
   clear: both;
 }
 
-p {
-  font-size: 16px;
-}
-
-/* header */
-
-header {
-  width: 100%;
-  height: 70px;
-  background-color: #EC715F;
-}
-
 .container {
   width: 1024px;
   margin: 0 auto;
 }
 
+/*-- Header --*/
+
+header {
+  background-color: #EC715F;
+  height: 70px;
+}
+
 .logo {
+  background-size: cover;
   height: 70px;
   float: left;
 }
 
-.nav-list {
+.nav {
   float: right;
 }
 
-.nav-list-item {
-  list-style: none;
-  font-size: 16px;
-  color: #FAFAFA;
+.nav-list {
   float: left;
+  list-style: none;
   line-height: 70px;
+  font-size: 16px;
   padding: 0 30px;
 }
 
-/*main-visual*/
+.nav-list a {
+  color: #FAFAFA;
+  font-size: 16px;
+}
+
+/*-- MainVisual --*/
 
 #mv {
   background-image: url(img/mv.png);
+  width: 100%;
+  height: 650px;
   background-size: cover;
   background-position: center;
-  height: 650px;
 }
 
-.mv-title{
-  font-size: 64px;
-  color: #FAFAFA;
-  text-align: center;
+.mv-title {
   padding-top: 200px;
+  color: #FAFAFA;
+  font-size: 64px;
+  text-align: center;
 }
 
-.mv-subtitle {
+.mv-text {
+  padding-top: 10px;
   font-size: 20px;
   color: #FAFAFA;
   text-align: center;
-  padding-top: 10px;
 }
 
-/*portfolio*/
+/*-- Portfolio --*/
 
 #portfolio {
   background-color: #ECEFF1;
 }
 
-#portfolio .container {
-  padding: 90px 0;
-}
-
 .heading {
-  text-align: center;
+  padding-top: 90px;
   font-size: 32px;
-  color: #000000;
+  text-align: center;
   padding-bottom: 8px;
 }
 
 .heading::after {
   content: "";
-  display: block;
-  width: 70px;
   height: 3px;
-  margin: 0 auto;
+  width: 70px;
   background-color: #EC715F;
+  margin: 0 auto;
+  display: block;
 }
 
 .heading-text {
-  text-align: center;
-  font-size: 16px;
-  color: #000000;
   padding: 30px 0;
-}
-
-.img-box {
-  width: 920px;
-  height: 510px;
-  margin: 0 auto;
-}
-
-.img-box-item {
-  background-size: cover;
-  background-position: center;
-  width: 300px;
-  height: 250px;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.img-box-item:nth-child(1) {
-  background-image: url(img/sketch.jpg);
-}
-
-.img-box-item:nth-child(2) {
-  background-image: url(img/websuku.png);
-}
-
-.img-box-item:nth-child(3) {
-  background-image: url(img/write.jpg);
-}
-
-.img-box-item:nth-child(4) {
-  background-image: url(img/webcamp.png);
-}
-
-.img-box-item:nth-child(5) {
-  background-image: url(img/talk.jpg);
-}
-
-.img-box-item:nth-child(6) {
-  background-image: url(img/webcamp-mother.png);
-}
-
-.img-box-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.img-box-item:last-child(-n+3){
-  margin-bottom: 0;
-}
-
-/*feature*/
-
-#feature .heading{
-  padding-top: 90px;
-}
-
-.feature-box {
-  width: 980px;
-  height: auto;
-  margin: 0 auto;
+  font-size: 16px;
   text-align: center;
+}
+
+.production-group {
+  margin: 0 auto;
+  width: 920px;
   padding-bottom: 90px;
 }
 
-.feature-box i {
-  font-size: 64px;
-}
-
-.feature-box-item {
-  width: 320px;
-  float: left;
+.production {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
   margin-right: 10px;
+  float: left;
 }
 
-.feature-box-item:nth-child(3) {
+.production:nth-child(-n+3) {
+  margin-bottom: 10px;;
+}
+
+.production:nth-child(3n) {
   margin-right: 0;
 }
 
-.feature-heading {
+.bg-1 {
+	background-image: url(img/sketch.jpg);
+}
+
+.bg-2 {
+	background-image: url(img/websuku.png);
+}
+
+.bg-3 {
+	background-image: url(img/write.jpg);
+}
+
+.bg-4 {
+	background-image: url(img/webcamp.png);
+}
+
+.bg-5 {
+	background-image: url(img/talk.jpg);
+}
+
+.bg-6 {
+	background-image: url(img/webcamp-mother.png);
+}
+
+/*-- Feature --*/
+
+#feature {
+  background-size: cover;
+  background-position: center;
+}
+
+.strength-group {
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: 90px;
+  width: 980px;
+}
+
+.strength {
+  float: left;
+  padding-right: 10px;
+  width: 320px;
+  height: auto;
   text-align: center;
+  font-size: 60px;
+}
+
+.strength:last-child {
+  padding-right: 0;
+}
+
+.strength-title {
   font-size: 20px;
-  color: #000000;
-  margin: 10px 0;
+  text-align: center;
+  padding: 10px 0;
 }
 
-.feature-text {
+.strength-text {
   font-size: 16px;
-  color: #000000;
+  text-align: left;
 }
 
-/*profile*/
+/*-- Profile --*/
 
 #profile {
   background-color: #ECEFF1;
 }
 
-#profile .container {
-  padding: 90px 0;
+.profile-group {
+  padding-bottom: 90px;
 }
 
-#profile h3 {
-  font-size: 20px;
-  color: #000000;
-  padding-bottom: 5px;
-}
-
-#profile p {
-  font-size: 16px;
-  color: #000000;
-}
-
-#profile .left-content {
-  width: 512px;
+.left-content {
+  width: 50%;
   float: left;
 }
 
-.myicon {
+.right-content {
+  width: 50%;
+  float: left;
+}
+
+.my-face {
   background-image: url(img/my-icon.jpg);
   width: 250px;
   height: 250px;
@@ -228,39 +217,24 @@ header {
   margin: 0 auto;
 }
 
-#profile .right-content {
-  padding-top: 30px;
-  width: 512px:
-  float: left;
-}
-
-.myname-text {
-  padding-bottom: 20px;
-}
-
-/*contact*/
-
-#contact .heading {
-  padding-top: 90px;
-}
-
-#contact .container {
-  width: 800px;
-  margin: 0 auto;
-}
-
-#contact h3 {
+.discription-title {
+  font-size: 20px;
   padding-bottom: 5px;
+  padding-top: 20px;
 }
 
-#contact .left-content-box {
-  width: 400px;
-  float: left;
+.discription-title:first-child {
+  padding-top: 0;
 }
 
-#contact .right-content-box {
-  width: 400px;
-  float: left;
+.discription-text {
+  font-size: 16px;
+}
+
+/*-- Contact --*/
+
+.contact-group {
+  padding-bottom: 90px;
 }
 
 .left-contact-content {
@@ -268,48 +242,180 @@ header {
   margin: 0 auto;
 }
 
-.left-contact-content h3:nth-last-child(2) {
-  padding-top: 20px;
-}
-
-.right-contact-content {
-  width: 200px;
-  margin: 0 auto;
-}
-
-#contact a {
-  margin: 0 auto;
-}
-
 .link-text {
   text-decoration: underline;
 }
 
-#contact i {
-  font-size: 50px;
-  padding-right: 20px;
-  float: left;
+.right-contact-content {
+  width: 170px;
+  margin: 0 auto;
 }
 
-#contact i:nth-last-child(1) {
+.right-contact-content .fa {
+  font-size: 50px;
+  padding-right: 20px;
+}
+
+.right-contact-content .fa:last-child {
   padding-right: 0;
 }
 
-#contact .clearfix {
-  padding-bottom: 90px;
-}
-
-/*footer*/
+/*-- Footer --*/
 
 footer {
-  width: 100%;
-  height: 60px;
   background-color: #EC715F;
+  height: 60px;
 }
 
 .copyright {
+  line-height: 60px;
   text-align: center;
   font-size: 16px;
   color: #FAFAFA;
-  line-height: 60px;
+}
+
+/*-- Media Queries --*/
+
+@media(max-width: 768px) {
+
+  /*-- Setting --*/
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .sp-none {
+    display: none;
+  }
+
+  .left-content {
+    float: none;
+    width: 100%;
+  }
+
+  .right-content {
+    float: none;
+    width: 100%;
+  }
+
+  /*-- Header --*/
+
+  header {
+    height: 50px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #FAFAFA;
+    margin: 5px 0;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #FAFAFA;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .nav {
+    float: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  /*-- MainVisual --*/
+
+  #mv {
+    background-image: url(img/code.png);
+  }
+
+  .mv-title {
+    font-size: 40px;
+  }
+
+  .mv-text {
+    font-size: 18px;
+  }
+
+  /*-- Portfolio --*/
+
+  #portfolio {
+    padding: 0 5%;
+  }
+
+  .production-group {
+    width: 300px;
+  }
+
+  .production {
+    float: none;
+  }
+
+  /*-- Feature --*/
+
+  #feature {
+    padding: 0 5%;
+  }
+
+  .strength-group {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .strength {
+    float: none;
+    padding-top: 10px;
+  }
+
+  .strength:first-child {
+    padding-top: 0;
+  }
+
+  /*-- Profile --*/
+
+  #profile {
+    padding: 0 5%;
+  }
+
+  .profile-group {
+    text-align: center;
+  }
+
+  .discription-title:first-child {
+    padding-top: 20px;
+  }
+
+  /*-- Content --*/
+
+  #contact {
+    padding: 0 5%;
+  }
+
+  .contact-group {
+    text-align: center;
+  }
+
+  .left-contact-content {
+    width: 100%;
+  }
+
+  .right-contact-content {
+    width: 100%;
+  }
+
 }
